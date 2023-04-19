@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+body{
+  padding: 0;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
+  -webkit-box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
+  -moz-box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
+}
+header h3 {
+  margin-top: -10px;
+}
+header button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+header button:hover {
+  background-color: rgb(218, 218, 218);
+  color: black;
+}
+
+.cartes {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cartes .carte {
+  border: 3px solid black;
+  max-width: 650px;
+  margin-bottom: 40px;
+  padding: 25px;
+}
+.cartes .carte h1 {
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+.cartes .carte a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.swiper {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+/* Pied de page */
+footer {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .liens{
+	  display:block;
+	  margin-top:5px;
+	  margin-bottom:10px;
+  }
+footer .gauche a{
+	text-decoration:none;
+	color:white;
+	margin-left:10px;
+	font-size:14px;
+}
+footer .gauche a:hover{
+	color:lightgray;
+}
+footer .droite {
+  display: flex;
+}
+footer .droite p{
+	margin-right: 15px;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	padding: 5px;
+	text-align:center;
+	width: 20px;
+	cursor:pointer;
+	margin-top:-5px;
+}
+footer .droite a{
+	text-decoration: none;
+	color:white;
+}
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px){
+	.principal{
+		position: relative;
+		/* margin-bottom:-10%; */
+	}
+  .principal .onglets .link, .principal h1, .principal .fa-heart{
+    display:none;
+  }
+  .cards .card img{
+    width: 300px;
+  }
+  footer .droite p{
+	margin-top:5px;
+	margin-left:10px
+}
+  footer .liens{
+	  display:block;
+	  margin-top:5px;
+	  margin-bottom:10px;
+  }
+  .boutique{
+    font-size:12px;
+}
+}
+
+.btn{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.btn a{
+  text-align: center;
+  background: #a85032;
+  padding: 12px 20px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.btn a:hover{
+  background: gray;
+  transition: 0.2s all linear;
+}
