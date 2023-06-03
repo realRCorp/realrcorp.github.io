@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rocket League Tournament</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <meta name="description" content="RocketFest International est un tournoi organisé par Ruydiazmiocid en partenariat avec la RCorp.">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://realrcorp.github.io/rcorp-r.ico">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="https://realrcorp.github.io"><img src="https://realrcorp.github.io/files/logo/rcorp-n.png" class="logorcorp"/></a></li>
+                <li class="menu-deroulant">
+                    <a href="https://realrcorp.github.io/store">Store</a>
+                    <ul class="sous-menu">
+                        <li><a href="https://realrcorp.github.io/store/motus">Motus</a></li>
+                        <li><a href="https://realrcorp.github.io/store/demineur">Démineur</a></li>
+                        <li><a href="https://realrcorp.github.io/store/r-song">R-Song</a></li>
+                        <li><a href="https://realrcorp.github.io/store/pendu">Pendu</a></li>
+                        <li><a href="https://realrcorp.github.io/store/r-run">R-Run</a></li>
+                    </ul>
+                </li>
+                <li class="menu-deroulant">
+                    <a href="https://realrcorp.github.io/merch">Merch</a>
+                    <ul class="sous-menu">
+                        <li><a href="http://cdn.realrcorp.tech/video.mp4">T-Shirt</a></li>
+                        <li><a href="#">Produits dérivés</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://realrcorp.github.io/about">À propos</a></li>
+                <li><a href="https://realrcorp.github.io/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>RocketFest International</h1>
+        <div class="page">
+            <div class="text">
+                <p>RocketFest International is a tournament organized by RuyDiazMiocid in partnership with RCorp, bringing together many players of many different nationalities on the game Rocket League and broadcast live on <a href="https://twitch.tv/ruydiazmiocid" target="_blank">Ruydiazmiocid's Twitch channel</a>.</p>
+                <p>The last tournament was held on December 30, 2020, but it's coming back soon for your enjoyment.</p>
+                <p>The technical part is managed by RCorp. If you have any suggestions or discover a bug, please let us know via the contact form.</p>
+            </div>
+                <div class="formulaire">
+                <h1>Registration form</h1>
+                <p>To register for the RocketFest International tournament, please fill in the following form.</p>
+                <form method="POST" action="https://script.google.com/macros/s/AKfycbzK2a9WIHvanM6uBZ4hMKr8BTrXQTF9UkojTm5_VxiWVuieSwmFzgs66X3N02deGyCq/exec">
+                    <div class="form">
+                        <label for="team">Your Team's Name</label>
+                        <input name="Team" id="team" type="text" required>
+                    </div>
+                    <div class="temp">
+                        <div class="discord">
+                            <label for="maindiscord">Your Discord username</label>
+                            <input name="Main's Discord" id="maindiscord" type="text" required>
+                        </div>
+                        <div class="rank">
+                            <label for="mainrank">Your Rank</label>
+                            <select id="mainrank" name="Main's Rank" required>
+                                <option value="Bronze">Bronze</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Platinum">Platinum</option>
+                                <option value="Diamond">Diamond</option>
+                                <option value="Champion">Champion</option>
+                            </select >
+                        </div>
+                        <div class="rankp">
+                            <label>Number</label>
+                            <select name="Number mn" required>
+                                <option value="I">I</option>
+                                <option value="II">II</option>
+                                <option value="III">III</option>
+                            </select >
+                        </div>
+                    </div>
+                    <div class="temp">
+                        <div class="discord">
+                            <label for="tmdiscord">Your Teammate's Discord username</label>
+                            <input name="Teammate's Discord" id="tmdiscord" type="text" required>
+                        </div>
+                        <div class="rank">
+                            <label for="tmrank">Your Teammate's Rank</label>
+                            <select  name="Teammate's Rank" id="tmrank" required>
+                        
+                                <option value="Bronze">Bronze</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Platine">Platine</option>
+                                <option value="Diamond">Diamond</option>
+                                <option value="Champion">Champion</option>
+                            </select >
+                        </div>
+                        <div class="rankp">
+                            <label>Number</label>
+                            <select name="Number tm" required>
+                                <option value="I">I</option>
+                                <option value="II">II</option>
+                                <option value="III">III</option>
+                            </select >
+                        </div>
+                    </div>
+                    <div class="form">
+                        <label for="why">Why do you want to participate ?</label>
+                        <textarea name="Why do you participate" id="why" rows="5" maxlength="500" required></textarea>
+                    </div>
+                    <div class="form">
+                        <label for="country">Which country do you want to represent ?</label>
+                        <input name="Country" id="country" type="text" placeholder="" required>
+                    </div>
+                    <div class="form">
+                        <label>What language do you speak ?</label>
+                        <div class="languages">
+                            <div class="lang">
+                                <input type="checkbox" id="english" name="English">
+                                <label for="english">English</label>
+                            </div>
+                            <div class="lang">
+                                <input type="checkbox" id="french" name="French">
+                                <label for="french">Français</label>
+                            </div>
+                            <div class="lang">
+                                <input type="checkbox" id="spanish" name="Spanish">
+                                <label for="spanish">Español</label>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="gauche">
+                &copy; 2023 RCorp™
+                <a href="https://realrcorp.github.io/cgu" class="liens">Conditions générales d'utilisation</a>
+                <a href="" class="liens">Conditions générales de vente</a>
+            </div>
+
+            <div class="droite">
+                <a href="https://www.instagram.com/realRCorp"><p><i class="fab fa-instagram"></i></p></a>
+                <a href="https://www.twitter.com/realRCorp"><p><i class="fab fa-twitter"></i></p></a>
+                <a href="https://www.twitch.tv/RCorp"><p><i class="fab fa-twitch"></i></p></a>
+            </div>
+        </footer>
+        
+    </body>
+</html>
