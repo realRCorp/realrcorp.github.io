@@ -88,6 +88,49 @@ label{
     gap: 0px;
 }
 
+.cartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cartes .carte {
+    border: 3px solid black;
+    max-width: 43%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .cartes .carte h1 {
+    margin-top: 0px;
+    text-transform: uppercase;
+  }
+  .cartes .carte a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+.cartes .date{
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+.journal{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width:65%;
+}
+.news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.twitter{
+    width: 30%;
+    height: 550px;
+}
+
+
 .btn{
     display: flex;
     grid-template-columns: repeat(3, 1fr);
