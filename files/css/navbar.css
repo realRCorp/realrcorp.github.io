@@ -1,39 +1,39 @@
 :root{
   --hauteur-menu: 60px;
 }
-nav{
+nav:not(.boutique,.product-filter){
   padding: 0px;
   font-family: Montserrat, sans-serif;
 }
-nav {
+nav:not(.boutique,.product-filter) {
   width: 100%;
   font-size: 18px;
   position: sticky;
   top: 0;
   background-color: white;
 }
-nav > ul {
+nav:not(.boutique,.product-filter) > ul {
   display: flex;
   text-align: center;
   box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
   height: var(--hauteur-menu);
 }
  
-nav ul {
+nav:not(.boutique,.product-filter) ul {
   list-style-type: none;
 }
 .logorcorp{
   width: 50px;
   height: 50px;
 }
-nav > ul > li{
+nav:not(.boutique,.product-filter) > ul > li{
   background-color: white;
   position: relative;
   height: 100%;
   flex: 1;
 }
 
-nav > ul > li > a {
+nav:not(.boutique,.product-filter) > ul > li > a {
   position: absolute;
   top: 50%;
   left: 50%;
