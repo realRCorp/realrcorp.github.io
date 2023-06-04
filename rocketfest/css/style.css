@@ -62,6 +62,12 @@ label{
 .discord{
     display: flex;
     flex-direction: column;
+    width: 49%;
+}
+
+.rl{
+    display: flex;
+    flex-direction: column;
     width: 50%;
 }
 

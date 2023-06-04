@@ -43,7 +43,7 @@
             </div>
                 <div class="formulaire">
                 <h1>Registration form</h1>
-                <p>To register for the RocketFest International tournament, please fill in the following form.</p>
+                <p>To register for the RocketFest International tournament, please fill in the following form. You must register as a team.</p>
                 <form id="rocketform" method="POST" action="https://script.google.com/macros/s/AKfycbzK2a9WIHvanM6uBZ4hMKr8BTrXQTF9UkojTm5_VxiWVuieSwmFzgs66X3N02deGyCq/exec">
                     <div class="form">
                         <label for="team">Your Team's Name</label>
@@ -51,8 +51,18 @@
                     </div>
                     <div class="temp">
                         <div class="discord">
-                            <label for="maindiscord">Your Discord username</label>
-                            <input name="Main's Discord" id="maindiscord" type="text" required>
+                            <label for="mndiscord">Your Discord Username</label>
+                            <input name="Main's Discord" id="mndiscord" type="text" required>
+                        </div>
+                        <div class="discord">
+                            <label for="tmdiscord">Teammate's Discord Username</label>
+                            <input name="Teammate's Discord" id="tmdiscord" type="text" required>
+                        </div>
+                    </div>
+                    <div class="temp">
+                        <div class="rl">
+                            <label for="mainrl">Your Rocket League username</label>
+                            <input name="Main's Rocket League" id="mainrl" type="text" required>
                         </div>
                         <div class="rank">
                             <label for="mainrank">Your Rank</label>
@@ -75,12 +85,12 @@
                         </div>
                     </div>
                     <div class="temp">
-                        <div class="discord">
-                            <label for="tmdiscord">Your Teammate's Discord username</label>
-                            <input name="Teammate's Discord" id="tmdiscord" type="text" required>
+                        <div class="rl">
+                            <label for="tmrl">Teammate's Rocket League username</label>
+                            <input name="Teammate's Rocket League" id="tmrl" type="text" required>
                         </div>
                         <div class="rank">
-                            <label for="tmrank">Your Teammate's Rank</label>
+                            <label for="tmrank">Teammate's Rank</label>
                             <select  name="Teammate's Rank" id="tmrank" required>
                         
                                 <option value="Bronze">Bronze</option>
