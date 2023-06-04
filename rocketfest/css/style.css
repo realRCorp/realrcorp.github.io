@@ -136,6 +136,9 @@ input, textarea, select {
     .formulaire{
         width: 100%;
     }
+    .page{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 530px) {
     .temp {
