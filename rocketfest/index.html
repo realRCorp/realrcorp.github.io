@@ -43,7 +43,7 @@
                 <div class="formulaire">
                 <h1>Registration form</h1>
                 <p>To register for the RocketFest International tournament, please fill in the following form.</p>
-                <form method="POST" action="https://script.google.com/macros/s/AKfycbzK2a9WIHvanM6uBZ4hMKr8BTrXQTF9UkojTm5_VxiWVuieSwmFzgs66X3N02deGyCq/exec">
+                <form id="rocketform" method="POST" action="https://script.google.com/macros/s/AKfycbzK2a9WIHvanM6uBZ4hMKr8BTrXQTF9UkojTm5_VxiWVuieSwmFzgs66X3N02deGyCq/exec">
                     <div class="form">
                         <label for="team">Your Team's Name</label>
                         <input name="Team" id="team" type="text" required>
@@ -130,6 +130,24 @@
                 </form>
             </div>
         </div>
+        <script>
+            window.addEventListener("load", function() {
+            const form = document.getElementById('rocketform');
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                method: 'POST',
+                body: data,
+                })
+                .then(() => {
+                alert("You are registered for RocketFest International!");
+                window.location.href = 'https://realrcorp.github.io';
+                })
+            });
+            });
+        </script>
         <footer>
             <div class="gauche">
                 &copy; 2023 RCorp™
