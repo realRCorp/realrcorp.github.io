@@ -142,3 +142,11 @@ footer .droite a{
     font-size:12px;
 }
 }
+.cartes2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.carte{
+  width: 48%;
+}
