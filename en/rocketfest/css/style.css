@@ -1,0 +1,238 @@
+body{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text{
+    width:50%;
+}
+.text a{
+    text-decoration: none;
+    color:#a85032;
+    font-weight: 600;
+}
+.text a:hover{
+    cursor: pointer;
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.discord{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.rl{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.rank{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.rankp{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.cartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cartes .carte {
+    border: 3px solid black;
+    max-width: 43%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .cartes .carte h1 {
+    margin-top: 0px;
+    text-transform: uppercase;
+  }
+  .cartes .carte a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+.cartes .date{
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+.journal{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width:65%;
+}
+.news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.twitter{
+    width: 30%;
+    height: 550px;
+}
+
+
+.btn{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 1.1rem;
+    justify-content: space-around;
+}
+.btn button{
+    text-align: center;
+    background: #a85032;
+    padding: 12px 20px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.btn button:hover{
+    background: gray;
+    transition: 0.2s all linear;
+    cursor: pointer;
+}
+
+.lang:hover input, .lang:hover label{
+    cursor: pointer;
+    font-weight: bold;
+}
+.languages{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.languages label{
+    gap: 0px;
+    font-weight: normal;
+}
+.lang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input, textarea, select {
+    padding: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    form {
+        width: 100%;
+    }
+    .formulaire{
+        width: 100%;
+    }
+    .page{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 530px) {
+    .temp {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Pied de page */
+footer {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .liens{
+        display:block;
+        margin-top:5px;
+        margin-bottom:10px;
+    }
+  footer .gauche a{
+      text-decoration:none;
+      color:white;
+      margin-left:10px;
+      font-size:14px;
+  }
+  footer .gauche a:hover{
+      color:lightgray;
+  }
+  footer .droite {
+    display: flex;
+  }
+  footer .droite p{
+      margin-right: 15px;
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px;
+      text-align:center;
+      width: 20px;
+      cursor:pointer;
+      margin-top:-5px;
+  }
+  footer .droite a{
+      text-decoration: none;
+      color:white;
+  }
+  /* Fin du pied de page */
