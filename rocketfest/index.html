@@ -45,50 +45,49 @@
             </div>
         </nav>
         <h1>RocketFest International</h1>
-        <button id="FR">FR</button>
         <div class="page">
             <div class="text">
-                <p id="text1">RocketFest International is a tournament organized by RuyDiazMiocid in partnership with RCorp, bringing together many players of many different nationalities on the game Rocket League and broadcast live on <a href="https://twitch.tv/ruydiazmiocid" target="_blank">Ruydiazmiocid's Twitch channel</a>.</p>
-                <p id="text2">The last tournament was held on December 30, 2020, but it's coming back soon for your enjoyment.</p>
-                <p id="text3">The technical part is managed by RCorp. If you have any suggestions or discover a bug, please let us know via the contact form.</p>
+                <p>Le RocketFest International est un tournoi organisé par RuyDiazMiocid en partenariat avec RCorp, réunissant de nombreux joueurs de plusieurs nationalités sur le jeu Rocket League et diffusé en direct sur la <a href="https://twitch.tv/ruydiazmiocid" target="_blank">chaîne Twitch de Ruydiazmiocid</a>.</p>
+                <p>Le dernier tournoi a eu lieu le 30 décembre 2020, mais il revient bientôt pour votre plus grand plaisir.</p>
+                <p>La partie technique est gérée par RCorp. Si vous avez des suggestions ou si vous découvrez un bug, veuillez nous en faire part via le formulaire de contact.</p>
                 <iframe src="https://brackethq.com/b/pxijb/embed/?zoom=0" width="100%" height="550" frameborder="0"></iframe>
             </div>
                 <div class="formulaire">
-                    <h1>Registration form</h1>
-                    <p>To register for the RocketFest International tournament, please fill in the following form. You must register as a team.</p>
+                    <h1>Formulaire d'inscription</h1>
+                    <p>Pour vous inscrire au tournoi RocketFest International, veuillez remplir le formulaire suivant. Vous devez vous inscrire en tant qu'équipe.</p>
                     <form id="rocketform" method="POST" action="https://script.google.com/macros/s/AKfycbzK2a9WIHvanM6uBZ4hMKr8BTrXQTF9UkojTm5_VxiWVuieSwmFzgs66X3N02deGyCq/exec">
                         <div class="form">
-                            <label for="team">Your Team's Name</label>
+                            <label for="team">Nom de votre équipe</label>
                             <input name="Team" id="team" type="text" required>
                         </div>
                         <div class="temp">
                             <div class="discord">
-                                <label for="mndiscord">Your Discord Username</label>
+                                <label for="mndiscord">Votre pseudo Discord</label>
                                 <input name="Main's Discord" id="mndiscord" type="text" required>
                             </div>
                             <div class="discord">
-                                <label for="tmdiscord">Teammate's Discord Username</label>
+                                <label for="tmdiscord">Pseudo Discord du coéquipier</label>
                                 <input name="Teammate's Discord" id="tmdiscord" type="text" required>
                             </div>
                         </div>
                         <div class="temp">
                             <div class="rl">
-                                <label for="mainrl">Your Rocket League username</label>
+                                <label for="mainrl">Votre pseudo Rocket League</label>
                                 <input name="Main's Rocket League" id="mainrl" type="text" required>
                             </div>
                             <div class="rank">
-                                <label for="mainrank">Your Rank</label>
+                                <label for="mainrank">Votre rang</label>
                                 <select id="mainrank" name="Main's Rank" required>
                                     <option value="Bronze">Bronze</option>
-                                    <option value="Silver">Silver</option>
-                                    <option value="Gold">Gold</option>
-                                    <option value="Platinum">Platinum</option>
-                                    <option value="Diamond">Diamond</option>
+                                    <option value="Silver">Argent</option>
+                                    <option value="Gold">Or</option>
+                                    <option value="Platinum">Platine</option>
+                                    <option value="Diamond">Diamant</option>
                                     <option value="Champion">Champion</option>
                                 </select >
                             </div>
                             <div class="rankp">
-                                <label>Number</label>
+                                <label>Numéro</label>
                                 <select name="Number mn" required>
                                     <option value="I">I</option>
                                     <option value="II">II</option>
@@ -98,23 +97,23 @@
                         </div>
                         <div class="temp">
                             <div class="rl">
-                                <label for="tmrl">Teammate's Rocket League username</label>
+                                <label for="tmrl">Pseudo Rocket League du coéquipier</label>
                                 <input name="Teammate's Rocket League" id="tmrl" type="text" required>
                             </div>
                             <div class="rank">
-                                <label for="tmrank">Teammate's Rank</label>
+                                <label for="tmrank">Rang du coéquipier</label>
                                 <select  name="Teammate's Rank" id="tmrank" required>
                             
                                     <option value="Bronze">Bronze</option>
-                                    <option value="Silver">Silver</option>
-                                    <option value="Gold">Gold</option>
+                                    <option value="Silver">Argent</option>
+                                    <option value="Gold">Or</option>
                                     <option value="Platine">Platine</option>
-                                    <option value="Diamond">Diamond</option>
+                                    <option value="Diamond">Diamant</option>
                                     <option value="Champion">Champion</option>
                                 </select >
                             </div>
                             <div class="rankp">
-                                <label>Number</label>
+                                <label>Numéro</label>
                                 <select name="Number tm" required>
                                     <option value="I">I</option>
                                     <option value="II">II</option>
@@ -123,19 +122,19 @@
                             </div>
                         </div>
                         <div class="form">
-                            <label for="why">Why do you want to participate ?</label>
+                            <label for="why">Pourquoi voulez-vous participer ?</label>
                             <textarea name="Why do you participate" id="why" rows="5" maxlength="500" required></textarea>
                         </div>
                         <div class="form">
-                            <label for="country">Which country do you want to represent ?</label>
+                            <label for="country">Quel pays voulez-vous représenter ?</label>
                             <input name="Country" id="country" type="text" placeholder="" required>
                         </div>
                         <div class="form">
-                            <label>What language do you speak ?</label>
+                            <label>Quelle langue parlez-vous ?</label>
                             <div class="languages">
                                 <div class="lang">
                                     <input type="checkbox" id="english" name="English">
-                                    <label for="english">English</label>
+                                    <label for="english">Anglais</label>
                                 </div>
                                 <div class="lang">
                                     <input type="checkbox" id="french" name="French">
@@ -143,11 +142,11 @@
                                 </div>
                                 <div class="lang">
                                     <input type="checkbox" id="spanish" name="Spanish">
-                                    <label for="spanish">Español</label>
+                                    <label for="spanish">Espagnol</label>
                                 </div>
                             </div>
                             <div class="btn">
-                                <button type="submit">Send</button>
+                                <button type="submit">Envoyer</button>
                             </div>
                         </div>
                     </form>
@@ -175,44 +174,44 @@
             <div class="journal">
                 <section class="cartes">
                     <div class="carte">
-                        <h1>Registration opens</h1>
-                        <p class="date">04/06/2023 - 01:35 by RCorp</p>
+                        <h1>Ouverture des inscriptions</h1>
+                        <p class="date">04/06/2023 - 01:35 par RCorp</p>
                         <hr />
                         <p>
-                            Registration is now open for the Rocket League <b>RocketFest International</b> tournament. Register as a team and try to win every match. Don't have a teammate? Don't worry, head over to the Discord and meet players who could take part with you - they're all great! 
+                            Les inscriptions sont désormais ouvertes pour le tournoi Rocket League <b>RocketFest International</b>. Inscrivez-vous en tant qu'équipe et tentez de remporter chaque match. Vous n'avez pas de coéquipier ? Ne vous inquiétez pas, rendez-vous sur le Discord et rencontrez des joueurs qui pourraient participer avec vous, ils sont tous géniaux !
                         </p>
                     </div>
                     <div class="carte">
-                        <h1>Useful links</h1>
-                        <p class="date">03/06/2023 - 23:55 by RCorp</p>
+                        <h1>Liens utiles</h1>
+                        <p class="date">03/06/2023 - 23:55 par RCorp</p>
                         <hr />
                         <p>
-                            Here are all the links you need to follow RocketFest International:
+                            Voici tous les liens nécessaires pour suivre le RocketFest International :
                             <br> <br>
-                            <a href="https://twitch.tv/ruydiazmiocid">RuyDiazMioCid's Twitch channel</a>
+                            <a href="https://twitch.tv/ruydiazmiocid">Chaîne Twitch de RuyDiazMioCid</a>
                             <br> <br>
-                            <a href="https://discord.gg/bsQuAFwa2j">RuyDiazMioCid's Discord server</a>
+                            <a href="https://discord.gg/bsQuAFwa2j">Serveur Discord de RuyDiazMioCid</a>
                             <br> <br>
-                            <a href="https://twitter.com/realRCorp">RCorp Twitter account</a>
+                            <a href="https://twitter.com/realRCorp">Compte Twitter de la RCorp</a>
                         </p>
                         
                     </div>
                 </section>
                 <section class="cartes">
                     <div class="carte">
-                        <h1>Page launch</h1>
-                        <p class="date">03/06/2023 - 23:51 by RCorp</p>
+                        <h1>Lancement de la page</h1>
+                        <p class="date">03/06/2023 - 23:51 par RCorp</p>
                         <hr />
                         <p>
-                            Welcome to the official RocketFest International page. On this site, RCorp takes care of everything, so you can keep up to date with the latest news, view the tournament bracket and register too! 
-                            We're doing everything we can to make sure you have a great time, without any technical problems, and with the best tools at your disposal. 
+                            Bienvenue sur la page officielle du RocketFest International. Sur ce site, RCorp s'occupe de tout, vous pouvez donc vous tenir au courant des dernières nouvelles, consulter le classement du tournoi et vous inscrire !
+                            Nous mettons tout en œuvre pour que vous passiez un bon moment, sans problème technique et avec les meilleurs outils à votre disposition.
                         </p>
                         <a href=""></a>
                     </div>
                 </section>
             </div>
             <div class="twitter">
-                <a class="twitter-timeline" data-height="550" href="https://twitter.com/realRCorp?ref_src=twsrc%5Etfw">Tweets by realRCorp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-height="550" href="https://twitter.com/realRCorp?ref_src=twsrc%5Etfw">Tweets par realRCorp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
         <footer>
