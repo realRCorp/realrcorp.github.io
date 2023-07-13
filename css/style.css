@@ -1,159 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins');
 body{
-  padding: 0;
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  font-family: "Poppins", sans-serif;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-color: #101728;
+    color: white;
+    margin: 0px;
 }
-
-header {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
-  -webkit-box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
-  -moz-box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    text-align: center;
 }
-header h3 {
-  margin-top: -10px;
+.txt{
+    display: flex;
+    justify-content: center;
 }
-header button {
-  background-color: black;
+.txt p{
+    width: 50%;
+    text-align: center;
+}
+#demo{
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+    text-align: center;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.socials a{
+    margin-left: .5rem;
+    background-color: #33353d;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    transition: all .2s linear;
+}
+.socials a:hover{
+    color: #33353d;
+    background-color:white;
+}
+.twitter {
+  background: #55ACEE;
   color: white;
-  font-size: 20px;
-  padding: 20px;
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
-header button:hover {
-  background-color: rgb(218, 218, 218);
-  color: black;
-}
-
-.cartes {
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.cartes .carte {
-  border: 3px solid black;
-  max-width: 600px;
-  margin-bottom: 40px;
-  padding: 20px;
-}
-.cartes .carte h1 {
-  margin-top: 0px;
-  text-transform: uppercase;
-}
-.cartes .carte a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.swiper {
-        width: 100%;
-        height: 100%;
-        margin-top: 20px;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-/* Pied de page */
-footer {
-  background-color: black;
-  padding: 20px;
+.discord {
+  background: #007bb5;
   color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
-footer .liens{
-	  display:block;
-	  margin-top:5px;
-	  margin-bottom:10px;
-  }
-footer .gauche a{
-	text-decoration:none;
-	color:white;
-	margin-left:10px;
-	font-size:14px;
-}
-footer .gauche a:hover{
-	color:lightgray;
-}
-footer .droite {
-  display: flex;
-}
-footer .droite p{
-	margin-right: 15px;
-	border: 1px solid #fff;
-	border-radius: 100%;
-	padding: 5px;
-	text-align:center;
-	width: 20px;
-	cursor:pointer;
-	margin-top:-5px;
-}
-footer .droite a{
-	text-decoration: none;
-	color:white;
-}
-/* Fin du pied de page */
-
-@media screen and (max-width: 640px){
-	.principal{
-		position: relative;
-		/* margin-bottom:-10%; */
-	}
-  .principal .onglets .link, .principal h1, .principal .fa-heart{
-    display:none;
-  }
-  .cards .card img{
-    width: 300px;
-  }
-  footer .droite p{
-	margin-top:5px;
-	margin-left:10px
-}
-  footer .liens{
-	  display:block;
-	  margin-top:5px;
-	  margin-bottom:10px;
-  }
-  .boutique{
-    font-size:12px;
-}
+.instagram {
+  background: #125688;
+  color: white;
 }
