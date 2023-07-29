@@ -1,0 +1,119 @@
+
+img{
+	width: 100%;
+}
+.title{
+	margin-left: 5rem;
+	font-size: 3rem;
+}
+.rating-download{
+	display: flex;
+	justify-content: space-between;
+	margin-top:1rem;
+}
+.rating{
+	display: flex;
+	align-items: center;
+	column-gap: 4px;
+	background: hsl(0, 0%, 100%, 0.4);
+	padding: 4px 10px;
+	border-radius: 0.5rem;
+	color: white;
+}
+.rating i{
+	color: #faf102;
+}
+.rating .bx{
+	color: #faf102;
+	font-size: 0.9rem;
+}
+.rating .span{
+	font-size: 0.9rem;
+}
+.swiper {
+    width: 100%;
+	height: 100%;
+    margin-top: 20px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+	
+	/* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text img{
+	height:10rem;
+	width:10rem;
+}
+.text{
+	display: flex;
+	justify-content: space-around;
+	margin-top:2rem;
+	margin-bottom: 5rem;
+}
+.about-container{
+	margin-left: 1rem;
+	width: 50rem;
+}
+.download{
+	max-width: 800px;
+	margin: auto;
+	width: 100%;
+	display: grid;
+	justify-content: center;
+	margin-top: 2rem;
+}
+.download h2{
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 0%;
+}
+.download-links{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	margin-bottom: 2rem;
+}
+.btn-container{
+    margin-top:3rem;
+}
+.btn {
+    flex: 1 1 auto;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.btn:hover {
+    cursor: pointer;
+    background-position: right center; /* change the direction of the change here */
+}
+.btn-color{
+    background-image: linear-gradient(to right, #ff3c5f 0%, #9340ff 51%, #ff3c5f 100%);
+}

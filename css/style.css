@@ -1,61 +1,163 @@
-body{
-    font-family: 'Raleway', sans-serif;
-    align-items: center;
-    justify-content: center;
-    background-size: 300% 300%;
-    background-color: #101728;
-    color: white;
-    margin: 0px;
+.wave{
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    animation-name: wave-animation;
+    display: inline-block;
+    position: relative;
+    transform-origin: 70% 70%;
 }
-h1{
-    display: flex;
-    justify-content: center;
-    font-size: 5rem;
-    text-align: center;
-}
-.txt{
-    display: flex;
-    justify-content: center;
-}
-.txt p{
-    width: 50%;
-    text-align: center;
-}
-#demo{
-    display: flex;
-    justify-content: center;
-    font-size: 10rem;
-    text-align: center;
-}
-.socials{
+
+.p1{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 2rem;
+    justify-content: space-between;
+    margin-top:1rem;
+    margin-bottom: 4rem;
 }
-.socials a{
-    margin-left: .5rem;
-    background-color: #33353d;
-    border-radius: 100%;
-    height: 3rem;
-    width: 3rem;
-    font-size: 1rem;
+.p1 img{
+    width: 40%;
+    height: 40%;
+    margin-left: 5%;
+}
+.p1 h1{
+    font-size: 5rem;
+    line-height: 5.5rem;
+    text-transform: uppercase;
+}
+.p1 .p1-text{
+    width: 40%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.p2{
+    background-image: url("../files/img/3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+}
+.p2-text{
+    width: 40%;
+    font-size: 1.5rem;
+}
+.p2 h1{
+    color:#9340ff;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    text-transform: uppercase;
+}
+.p3{
+    background-image: url("../files/img/2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    display: flex;
+}
+.p3-text{
+    width: 50%;
+    font-size: 1.5rem;
+    margin-left: 50%;
+}
+.p3 h1{
+    color:#9340ff;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    text-transform: uppercase;
+}
+.p4{
+    background-image: url("../files/img/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+}
+.p4-text{
+    width: 40%;
+    font-size: 1.5rem;
+}
+.p4 h1{
+    color:#9340ff;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    text-transform: uppercase;
+}
+.p5{
+    background-image: url("../files/img/4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    display: flex;
+    justify-content: right;
+}
+.p5-text{
+    width: 40%;
+    font-size: 1.5rem;
+}
+.p5 h1{
+    color:#9340ff;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    text-transform: uppercase;
+}
+.container{
+    margin-top:3rem;
+}
+.btn {
+    flex: 1 1 auto;
+    padding: 30px;
     text-align: center;
-    transition: all .2s linear;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
 }
-.socials a:hover{
-    color: #33353d;
-    background-color:white;
+.btn:hover {
+    cursor: pointer;
+    background-position: right center; /* change the direction of the change here */
 }
-.twitter {
-  background: #55ACEE;
-  color: white;
+.btn-color{
+    background-image: linear-gradient(to right, #ff3c5f 0%, #9340ff 51%, #ff3c5f 100%);
 }
-.discord {
-  background: #007bb5;
-  color: white;
-}
-.instagram {
-  background: #125688;
-  color: white;
+
+@media screen and (max-width: 1340px){
+    .p1{
+        flex-direction: column;
+    }
+    .p1 img{
+        width: 50%;
+        height: 50%;
+        margin:auto;
+    }
+    .p1 .p1-text{
+        width: 90%;
+        margin:auto;
+    }
+    .p2{
+        width: 90%;
+    }
+    .p2 .p2-text{
+        width: 90%;
+    }
+    .p3{
+        width: 90%;
+    }
+    .p3 .p3-text{
+        width: 90%;
+        margin-left: 0%;
+    }
+    .p4{
+        width: 90%;
+    }
+    .p4 .p4-text{
+        width: 90%;
+    }
+    .p5{
+        width: 90%;
+        justify-content: left;
+    }
+    .p5 .p5-text{
+        width: 90%;
+    }
 }

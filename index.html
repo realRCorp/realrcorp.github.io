@@ -1,55 +1,146 @@
 <!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<title>RCorp</title>
-		<meta charset="UTF-8">
-		<link rel="shortcut icon" type="image/x-icon" href="https://realrcorp.github.io/rcorp-r.ico">
-		<meta name="description" content="Après plusieurs années de bons et loyaux services, le site de la RCorp fait peau neuve. Nous avons décidé de le recréer dans un style qui correspond mieux à nos attentes actuelles.">
-		<meta property="og:image" content="https://realrcorp.github.io/files/logo/rcorp-r.png">
-		<meta name="keywords" content="rcorp, rubnk, rowuni, jeux, jeux vidéos, realrcorp, twitch, informatique, numérique, programmation, maranaï, guismo, yapudpil, motus, pendu, jeu, r-run, runner, vidéo, blind, test, vidéos, démineur, ">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
-	</head>
-	<body>
-		<p id="demo"></p>
-		<script>
-			// Date objectif
-			var countDownDate = new Date("Jul 22, 2023 15:00:00").getTime();
-
-			// Update toutes les secondes
-			var x = setInterval(function() {
-
-			// Date actuelle
-			var now = new Date().getTime();
-					
-			// Différence entre la date objectif et maintenant
-			var distance = countDownDate - now;
-					
-			// Calcul des jours, heures, minutes et secondes
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-					
-			// Changement texte id demo
-			document.getElementById("demo").innerHTML = days + "j " + hours + "h "
-			+ minutes + "m " + seconds + "s ";
-					
-			// Texte quand timer < 0
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("demo").innerHTML = "Plus que quelques instants...";
-			}
-			}, 1000);
-		</script>
-		<h1>LA RCORP REVIENT BIENTÔT</h1>
-		<div class="txt">
-			<p>Après plusieurs années de bons et loyaux services, le site de la RCorp fait peau neuve. Nous avons décidé de le recréer dans un style qui correspond mieux à nos attentes actuelles.</p>
-		</div>
-		<div class="socials">
-			<a href="https://twitter.com/realRCorp" target="_blank" class="twitter"><p><i class="fab fa-twitter"></i></p></a>
-			<a href="https://discord.gg/PmGQ7wwTrH" target="_blank" class="discord"><p><i class="fab fa-discord"></i></p></a>
-			<a href="https://instagram.com/realrcorp" target="_blank" class="instagram"><p><i class="fab fa-instagram"></i></p></a>
-		</div>
-	</body>
+	<html lang="fr">
+		<head>
+			<title>RCorp</title>
+			<meta charset="UTF-8">
+			<link rel="shortcut icon" type="image/x-icon" href="https://realrcorp.github.io/rcorp-r.ico">
+			<meta name="description" content="La RCorp est une startup spécialisée dans le développement informatique et l'audiovisuel. Nous créons des jeux vidéos qui sont disponibles au téléchargement sur ce site, gratuitement et sans aucune publicité. Nous fournissons des outils personnalisés dans tous les domaines, ">
+			<meta property="og:image" content="https://realrcorp.github.io/files/logo/rcorp-r.png">
+			<meta name="keywords" content="rcorp, rubnk, rowuni, jeux, jeux vidéos, realrcorp, twitch, informatique, numérique, programmation, maranaï, guismo, yapudpil, motus, pendu, jeu, r-run, runner, vidéo, blind, test, vidéos, démineur, ">
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="https://realrcorp.github.io/files/css/utils.css">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"/>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		</head>
+		<body>
+			<nav>
+				<div class="nav">
+					<a href="" class="logo">RCorp</a>
+					<div class="links">
+						<ul>
+							<li><a href="https://realrcorp.github.io/store"><span class="material-symbols-outlined">stadia_controller</span> Store</a></li>
+							<!--<li><a href="https://realrcorp.github.io/merch"><span class="material-symbols-outlined">checkroom</span> Merch</a></li>-->
+							<li><a href="https://realrcorp.github.io/about"><span class="material-symbols-outlined">person</span> À propos</a></li>
+							<li><a href="https://realrcorp.github.io/contact"><span class="material-symbols-outlined">mail</span> Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="p1">
+				<img src="https://realrcorp.github.io/files/logo/rcorp-b.png">
+				<div class="p1-text">
+					<h1>BIENVENUE CHEZ RCORP </h1>
+					<p>
+						La RCorp est une startup spécialisée dans le développement informatique et l'audiovisuel.
+						<br><br>
+						Nous créons des jeux vidéos qui sont disponibles au téléchargement sur ce site, gratuitement et sans aucune publicité. Nous fournissons des outils personnalisés dans tous les domaines.
+					</p>
+					<div class="container">
+						<a class="btn btn-color" href="https://realrcorp.github.io/about">En savoir plus</a>
+					</div>
+				</div>
+			</div>
+			<div class="p2">
+				<div class="p2-text">
+					<h1>JEUX VIDÉOS</h1>
+					<p>
+						Nous créons des jeux vidéos conçus avec amour par notre équipe de développement. 
+						<br><br>
+						Nous pensons que le jeu vidéo est bien plus qu'un simple passe-temps : c'est un art qui peut changer votre manière de voir le monde. 
+						<br><br>
+						Prêt à commencer l'aventure ? Découvrez nos jeux ici.
+					</p>
+					<div class="container">
+						<a class="btn btn-color" href="https://realrcorp.github.io/store">En savoir plus</a>
+					</div>
+				</div>
+			</div>
+			<div class="p3">
+				<div class="p3-text">
+					<h1>informatique</h1>
+					<p>
+						Nous sommes déterminés à faciliter la vie des entreprises, des startups et des particuliers en leur fournissant des logiciels, des outils et des sites web performants. <br>
+						Notre mission est de vous accompagner dans le monde numérique en constante évolution.
+						<br><br>
+						Changeons ensemble votre façon de travailler.
+					</p>
+					<!-- <div class="container">
+						<a class="btn btn-color">En savoir plus</a>
+					</div> -->
+				</div>
+			</div>
+			<div class="p4">
+				<div class="p4-text">
+					<h1>Photographie</h1>
+					<p>
+						Aujourd'hui, la photographie est au coeur de notre attention, les réseaux sociaux en sont les principaux vecteurs. 
+						<br><br>
+						Que ça soit pour de l'évènementiel, pour des séances photos, des portraits, de l'architecture ou des paysages, notre équipe saura répondre a vos demandes. 
+					</p>
+					<!--<div class="container">
+						<a class="btn btn-color">En savoir plus</a>
+					</div>-->
+				</div>
+			</div>
+			<div class="p5">
+				<div class="p5-text">
+					<h1>Réseaux</h1>
+					<p>
+						Nous accompagnons des créateurs de contenus en leur fournissant des outils utiles à leur développement. 
+						<br><br>
+						Nous pouvons vous fournir des solutions, et vous accompagner pour vous permettre d'élargir votre visibilité sur les réseaux sociaux. 
+					</p>
+					<!-- <div class="container">
+						<a class="btn btn-color">En savoir plus</a>
+					</div> -->
+				</div>
+			</div>
+			<footer>
+				<div class="footer">
+					<div class="top">
+						<div class="about-ql">
+							<div class="about">
+								<h2>Qui sommes-nous ?</h2>
+								<p>La RCorp est une startup spécialisée dans le développement informatique et l'audiovisuel. Fondée par RubnK et Rowuni en 2020, elle n'a cessé de se développer au fil des années. </p>
+							</div>
+							<div class="ql">
+								<div class="quick-links">
+									<h2>Pages</h2>
+									<a href="https://realrcorp.github.io/about">A propos</a>
+									<a href="https://realrcorp.github.io/contact">Contact</a>
+									<a href="https://realrcorp.github.io/career">Carrières</a>
+									<a href="https://realrcorp.github.io/faq">FAQ</a>
+								</div>
+								<div class="quick-links">
+									<h2>Légal</h2>
+									<a href="https://realrcorp.github.io/cgu">Conditions générales d'utilisation</a>
+									<a href="https://realrcorp.github.io/cgv">Conditions générales de vente</a>
+								</div>
+								<div class="quick-links">
+									<h2>Langues</h2>
+									<a href="https://realrcorp.github.io/">Français</a>
+									<a href="https://realrcorp.github.io/en">English</a>
+									<!--<a href="https://realrcorp.github.io/es">Español</a>-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr/>
+					<div class="bottom">
+						<div class="copyright">
+							<p>Copyright © 2023 All Rights Reserved by RCorp.</p>
+						</div>
+						<ul class="socials">
+							<a href="https://twitter.com/realRCorp" target="_blank" class="twitter"><p><i class="fab fa-twitter"></i></p></a>
+							<a href="https://instagram.com/realrcorp" target="_blank" class="instagram"><p><i class="fab fa-instagram"></i></p></a>
+							<a href="https://twitch.tv/RCorp" target="_blank" class="twitch"><p><i class="fab fa-twitch"></i></p></a>
+							<a href="https://github.com/realRCorp" target="_blank" class="github"><p><i class="fab fa-github"></i></p></a>
+							<a href="https://discord.gg/PmGQ7wwTrH" target="_blank" class="discord"><p><i class="fab fa-discord"></i></p></a>
+							<a href="https://www.linkedin.com/company/realrcorp" target="_blank" class="linkedin"><p><i class="fab fa-linkedin"></i></p></a>
+							<a href="https://www.tiktok.com/@realrcorp" target="_blank" class="tiktok"><p><i class="fab fa-tiktok"></i></p></a>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</body>
 </html>

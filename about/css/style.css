@@ -1,0 +1,168 @@
+.p1{
+    margin-top:5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.p1 h1{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color:#9340ff;
+}
+.p1 .p1-title{
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.p1 h2{
+    font-size: 1.7rem;
+}
+.p1 p{
+    width: 55%;
+    font-size: 1.2rem;
+}
+.title{
+    font-size: 1.5rem;
+    margin-top: 10%;
+    text-align: center
+}
+.chiffres{
+    display: grid;
+    grid-template-columns: repeat(4, 10rem); /* Les images auront au moins 200px de largeur et occuperont autant d'espace que possible */
+    justify-content: space-evenly;
+}
+.p-chiffres{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.p-chiffres h1{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color:#9340ff;
+}
+.p-chiffres h2{
+    font-size: 1.7rem;
+    margin-bottom: 0%;
+}
+.chiffres p{
+    font-size: 6rem;
+    margin-bottom: 0rem;
+}
+.chiffres h2{
+    margin-top: 0rem;
+    font-size: 1.2rem;
+}
+.employees{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.employees h2{
+    line-height: 2rem;
+}
+.line{
+    display: grid;
+    grid-template-columns: repeat(3, 10rem); /* Les images auront au moins 200px de largeur et occuperont autant d'espace que possible */
+    justify-content: space-between;
+    width: 40%;
+}
+.line img{
+    width: 10rem;
+    height: 10rem;
+    transition: all .3s;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.line .person{
+    width: 10rem;
+    transition: all .3s;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    color: #33353d;
+    z-index: 1;
+    text-decoration: none;
+}
+.line .person .person-text{
+    font-size: 0rem;
+    transition: all .3s;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2rem;
+    line-height: 1rem;
+}
+.line .person:hover .person-text{
+    font-size: 1rem;
+}
+.line .person:hover{
+    padding: 1rem;
+    padding-right: 20rem;
+    margin: 0rem;
+    width: 50%;
+    background-color: white;
+    z-index: 3;
+}
+.line .person:hover img{
+    transform: scale(1.05);
+}
+.line .person{
+    transition: all .3s;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    color: #33353d;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1340px){
+    .p1{
+        flex-direction: column;
+    }
+    .p1 p{
+        width: 100%;
+    }
+    .p1 .p1-title{
+        width: 100%;
+        margin:auto;
+    }
+    .line{
+        width: 60%;
+    }
+    .chiffres{
+        grid-template-columns: repeat(2, 10rem); /* Les images auront au moins 200px de largeur et occuperont autant d'espace que possible */
+    }
+}
+@media screen and (max-width: 1000px){
+    .employees{
+        display: block;
+    }
+    .line{
+        width: 85%;
+        grid-template-columns: repeat(4, 100px); /* Les images auront au moins 200px de largeur et occuperont autant d'espace que possible */
+    }
+    .line .person:hover{
+        padding: 0rem;
+        padding-right: 0rem;
+        margin: 1rem;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0);
+        z-index: 3;
+    }
+    .line .person-text{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    .line{
+        grid-template-columns: repeat(3, 100px); /* Les images auront au moins 200px de largeur et occuperont autant d'espace que possible */
+    }
+}
