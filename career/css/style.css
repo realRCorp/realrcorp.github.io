@@ -76,7 +76,7 @@
   }
   
   .skill {
-    display: inline;
+    display: inline-block;
     color: #00a6c2;
     border-radius: 2px;
     background-color: rgba(0,166,194,.05);
