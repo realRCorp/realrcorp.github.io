@@ -1,0 +1,101 @@
+.obligatoire{
+	color: red;
+	font-size: 1.5rem;
+	line-height: 0%;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+	background-color: white;
+	padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+	color: black;
+	margin: auto;
+	margin-bottom: 3rem;
+}
+.text{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5rem;
+	text-align: center;
+    margin-bottom: 4rem;
+}
+.text h1{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color:#9340ff;
+    margin-bottom: 0%;
+}
+.text h2{
+    font-size: 1.7rem;
+	margin-top: .5rem;
+}
+.text p{
+	font-size: 1.1rem;
+}
+.text a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+.text a:hover{
+	color: #2169ec;
+}
+label{
+	margin-top:1rem;
+	margin-bottom: .3rem;
+}
+input:not(.btn){
+	height: 2rem;
+	font-family: 'Quicksand', sans-serif;
+}
+textarea{
+	height: 8rem;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem;
+}
+select{
+	height: 2rem;
+	font-family: 'Quicksand', sans-serif;
+}
+.container{
+	margin-top: 1rem;
+    margin-left: auto;
+}
+.btn {
+    flex: 1 1 auto;
+    padding: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 50px;
+    font-size: 1em;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.btn:hover {
+    cursor: pointer;
+    background-position: right center; /* change the direction of the change here */
+}
+.btn-color{
+    background-image: linear-gradient(to right, #ff3c5f 0%, #9340ff 51%, #ff3c5f 100%);
+}
+.btn-container{
+    margin-top:3em;
+    margin-bottom: 3em;
+}
+
+@media screen and (max-width: 1340px){
+    .swiper-txt h1{
+        font-size: 1.5rem;
+    }
+    .swiper-txt p{
+        font-size: .8rem;
+    }
+}
